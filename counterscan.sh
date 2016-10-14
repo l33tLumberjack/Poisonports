@@ -12,7 +12,7 @@ do
 			while read line
 			do	
 				echo -e "$GOOD Detected a port scan from $line counterscan initiated!"
-				nmap -T4 -A $line -oN ./$line.txt &> /dev/null;
+				nmap -T4 -A $line -oN ./ScanResults/$line.txt &> /dev/null;
 				echo -e "$GOOD Counterscan for $line completed.";
 			done <IPs_working.txt
 	fi

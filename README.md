@@ -20,15 +20,22 @@ counterscan.sh is a script that checks the file IPs.txt every 10 seconds to see 
 ## Requirements
 
 gnome-terminal
+
 nmap
+
 nc
 
 ## To-do
 Prevent firewalling our own IP
+
 Add option for specifying listening ports
+
 Add option to choose type of scan (intense, fast, OS detect, etc.)
+
 Add option to whitelist IPs
+
 Print port information gathered from scans to POISON tab 
+
 Add option to flood IP with packets
 
 ## Known issues

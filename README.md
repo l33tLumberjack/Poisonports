@@ -25,7 +25,11 @@ nmap
 
 nc
 
-## To-do
+## How-to
+To run poisonports make sure all three files (poisonports.sh, shields.sh, and counterscan.sh) are all in the same folder.
+./poisonports.sh
+
+## TODO
 - [ ] Prevent firewalling our own IP
 
 - [ ] Add option for specifying listening ports
@@ -41,7 +45,4 @@ nc
 ## Known issues
 Occasionally the same IP will be added to IPs.txt causing it to be scanned twice.
 
-## How-to
-To run poisonports make sure all three files (poisonports.sh, shields.sh, and counterscan.sh) are all in the same folder.
-./poisonports.sh
 

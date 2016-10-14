@@ -26,17 +26,17 @@ nmap
 nc
 
 ## To-do
-[ ] Prevent firewalling our own IP
+-[ ] Prevent firewalling our own IP
 
-[ ] Add option for specifying listening ports
+-[ ] Add option for specifying listening ports
 
-[ ] Add option to choose type of scan (intense, fast, OS detect, etc.)
+-[ ] Add option to choose type of scan (intense, fast, OS detect, etc.)
 
-[ ] Add option to whitelist IPs
+-[ ] Add option to whitelist IPs
 
-[ ] Print port information gathered from scans to POISON tab 
+-[ ] Print port information gathered from scans to POISON tab 
 
-[ ] Add option to flood IP with packets
+-[ ] Add option to flood IP with packets
 
 ## Known issues
 Occasionally the same IP will be added to IPs.txt causing it to be scanned twice.

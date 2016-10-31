@@ -1,4 +1,5 @@
 #!/bin/bash
+
 if [ $# -eq 0 ]
 then 
 	echo "No config file supplied using default config file"

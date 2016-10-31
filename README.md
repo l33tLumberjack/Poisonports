@@ -14,7 +14,7 @@ Poisonports is a set of self defense scripts to be used in Capture The Flag (CTF
 Opens a terminal with multiple tabs.  Each tab is a seperate shields.sh instance for different ports with the main tab running counterscan.sh. You can modify the listening ports by changing the config file to contain on each line the port you want to emulate and then a timeout in seconds that is used by shields.sh in order to prevent iptables breaking.
 
 ### shields.sh 
-Creates a netcat listener on a variable port. Once a connection has been made to the specified port the IP is checked against iptables to see if it has been added already. If not shields.sh adds the IP to IPs.txt to be used later in the counterscan and an iptables rule is added to drop all connections from the connecting IP.
+Creates a netcat listener on a variable port.  Once a connection has been made to the specified port the IP is checked against iptables to see if it has been added already. If not shields.sh adds the IP to IPs.txt to be used later in the counterscan and an iptables rule is added to drop all connections from the connecting IP.
 
 ### counterscan.sh 
 A script that checks the file IPs.txt every 10 seconds to see if it has been created. If so it copies the file to IPs_working.txt and deletes IPs.txt. For each IP address in IPs_working.txt an nmap scan is launched and the results are put in a text file located in the ScanResults inside of the directory where Poisonports is located.
@@ -44,6 +44,8 @@ To run poisonports make sure all three files (poisonports.sh, shields.sh, and co
 - [ ] Print port information gathered from scans to POISON tab 
 
 - [ ] Add option to flood IP with packets
+
+- [ ] Convert to Python
 
 ## Known issues
 Occasionally the same IP will be added to IPs.txt causing it to be scanned twice.
